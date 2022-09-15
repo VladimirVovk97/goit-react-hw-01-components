@@ -1,9 +1,9 @@
 import Profile from './Components/Profile/Profile';
 import user from './Components/Profile/user.json';
-// import FriendList from './Components/FriendList/Friendlist';
+import Statistics from './Components/Statistics/Statistics';
+import data from './Components/Statistics/data.json';
+// import FriendList from './Components/FriendList/Friendlist.styled';
 // import friends from './Components/FriendList/friends.json';
-// import Statistics from './Components/Statistics/Statistics';
-// import data from './Components/Statistics/data.json';
 // import Transactions from './Components/Transactions/Transactions';
 // import transactions from './Components/Transactions/transactions.json';
 
@@ -19,6 +19,8 @@ export default function App() {
         views={user.stats.views}
         likes={user.stats.likes}
       />
+      <Statistics title="Upload stats" stats={data} />;
+      {/* <Statistics stats={data} />; */}
       {/* <FriendList items={friends} /> */}
     </>
   );
