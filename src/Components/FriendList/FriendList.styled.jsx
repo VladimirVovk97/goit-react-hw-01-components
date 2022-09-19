@@ -6,6 +6,7 @@ export const FriendListUl = styled.ul`
   flex-direction:column;
   margin-left:auto;
   margin-right:auto;
+  margin-bottom: 40px;
   }
 `;
 export const Description = styled.p`
